@@ -9,7 +9,7 @@ Image for running newman in (gitlab)-ci environments
 
   Node: 8.5.0
 
-  Newman: 3.8.2
+  Newman: 4.1.0
 
 
 ### Usage Examples
@@ -20,7 +20,7 @@ Image for running newman in (gitlab)-ci environments
 ```
   testing:
     stage: test
-    image: polarbase/newman
+    image: oipilot/newman
     script:
       - newman run my.postman_collection.json -e my.postman_environment.json -r cli,html,json
     artifacts:
@@ -33,5 +33,5 @@ Image for running newman in (gitlab)-ci environments
 #### local:
 
 ```terminal
-docker run -t --rm -v ${PWD}:/etc/newman polarbase/newman newman run my.postman_collection.json -e my.postman_environment.json -r cli,html,json
+docker run -t --rm -v ${PWD}:/etc/newman oipilot/newman newman run my.postman_collection.json -e my.postman_environment.json -r cli,html,json
 ```
