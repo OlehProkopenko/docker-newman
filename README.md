@@ -5,9 +5,9 @@ Image for running newman in (gitlab)-ci environments
 
 ### Versions:
 
-  Alpine: 3.6
+  Alpine: 3.8.1
 
-  Node: 8.5.0
+  Node: v10.10.0
 
   Newman: 4.1.0
 
