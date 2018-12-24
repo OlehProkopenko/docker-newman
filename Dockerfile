@@ -1,8 +1,8 @@
 FROM node:alpine
-ENV NEWMAN_VERSION 4.1.0
 
-RUN npm install -g newman@${NEWMAN_VERSION};
-RUN npm install -g newman-reporter-html;
+
+RUN npm install -g newman@latest
+RUN npm install -g newman-reporter-html@latest;
 
 WORKDIR /etc/newman
 CMD ["newman"]

@@ -1,22 +1,13 @@
 # Newman
-
-Image for running newman in (gitlab)-ci environments
-
-
+Image for running newman in GitLab-CI environments
 ### Versions:
 
-  Alpine: 3.8.1
-
-  Node: v10.10.0
-
-  Newman: 4.1.0
-
-
+  Alpine: 3.8   
+  Node: v11.5  
+  Newman: 4.2.3  
+  Newman-reporter-html: 1.0.2
 ### Usage Examples
-
-
 #### gitlab-ci.yml:
-
 ```
   testing:
     stage: test
@@ -26,12 +17,8 @@ Image for running newman in (gitlab)-ci environments
     artifacts:
       paths:
       - newman/
-
 ```
-
-
 #### local:
-
 ```terminal
 docker run -t --rm -v ${PWD}:/etc/newman oipilot/newman newman run my.postman_collection.json -e my.postman_environment.json -r cli,html,json
 ```
