@@ -5,11 +5,11 @@ Image for running newman in (gitlab)-ci environments
 
 ### Versions:
 
-  Alpine: 3.8.1
+  Alpine: 3.8.2
 
   Node: v10.10.0
 
-  Newman: 4.1.0
+  Newman: 4.2.3
 
 
 ### Usage Examples
