@@ -1,11 +1,11 @@
 # Newman
 Image for running newman in GitLab-CI environments
 ### Versions:
-  Alpine: 3.8   
+  Alpine: 3.10   
   Node: 11.5  
-  Newman: 4.2.3  
-  Newman-reporter-html: 1.0.2  
-  Newman-reporter-htmlextra: 1.4.0
+  Newman: 5.2.0  
+  Newman-reporter-html: 1.0.5  
+  Newman-reporter-htmlextra: 1.19.0
 ### Usage Examples
 #### gitlab-ci.yml:
 ```
